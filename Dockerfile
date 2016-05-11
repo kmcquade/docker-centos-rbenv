@@ -12,7 +12,7 @@ RUN yum clean all
 
 # Install rbenv and ruby-build
 ARG RUBY_VERSION
-ENV RUBY_VERSION ${RUBY_VERSION:-1.9.3-p551}
+ENV RUBY_VERSION ${RUBY_VERSION:-2.3.0}
 
 WORKDIR /usr/local
 RUN git clone https://github.com/sstephenson/rbenv.git rbenv
